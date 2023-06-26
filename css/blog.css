@@ -1,0 +1,226 @@
+@media screen and (width >=1440px) {
+    .choosingTheme_links {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (width >=1024px) and (width < 1440px) {
+    .choosingTheme_links {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (width >=768px) and (width < 1024px) {
+    .choosingTheme_links {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (width >=414px) and (width < 768px) {
+    .choosingTheme_links {
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+}
+
+@media screen and (width >=320px) and (width < 414px) {
+    .choosingTheme_links {
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+}
+
+@media screen and (width < 320px) {
+    .choosingTheme_links {
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+}
+
+
+.main_path {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #333333;
+    font-size: 12px;
+}
+
+.main_path li {
+    display: inline;
+}
+
+.main_path li:not(:last-child)::after {
+    content: " \203A ";
+}
+
+.main h1 {
+    margin: 32px 0;
+    font-style: normal;
+    font-weight: 700;
+    color: #333333;
+    font-size: 48px;
+}
+
+.main {
+    background-image: url("/images/gallery/back1_1.png");
+    background-position: center top 325px;
+    background-repeat: no-repeat;
+}
+
+.choosingTheme_links {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.choosingTheme_link {
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 700;
+    color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    padding: 6px 8px;
+    border: 1px solid #C1C5CD;
+    border-radius: 24px;
+}
+
+.choosingTheme_links li {
+    display: inline-block;
+}
+
+.choosingTheme_link_selected {
+    border: 2px solid #16C8BB;
+}
+
+.choosingTheme_link_selected::before {
+    content: " ";
+    background-image: url('../images/gallery/horse.svg');
+    background-size: cover;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+}
+
+.choosingTheme_links li:first-child button::before {
+    content: " ";
+    background-image: url('../images/gallery/face.svg');
+    background-size: cover;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+}
+
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    margin-bottom: 24px;
+}
+
+.blog__card {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 2px solid #DEDEDE;
+    border-radius: 16px;
+    min-width: 250px;
+}
+
+.blog__text {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    padding: 16px;
+    align-items: end;
+    min-height: 240px;
+    row-gap: 4px;
+}
+
+.blog__img {
+    position: relative;
+}
+
+.blog__img img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.blog__theme {
+    position: absolute;
+    top: 0%;
+}
+
+.blog__theme button {
+    display: block;
+    margin: 8px 0 0 8px;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+
+}
+
+.blog__text h3 a {
+    color: #494949;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.blog__text:nth-child(2) {
+    color: #494949;
+    font-size: 12px;
+    font-family: Montserrat;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    padding-top: 4px;
+}
+
+.blog__text p:nth-child(3) {
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 20px;
+    padding-top: 8px;
+}
+
+.blogFirst__card {
+    flex: 1 1 468px;
+    min-width: 250px;
+}
+
+.blogSecond {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    margin-bottom: 24px;
+}
+
+.blogSecond__card {
+    flex: 1 1 304px;
+}
+
+.main__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__button button {
+    width: 182px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 96px;
+    margin-top: 56px;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFF;
+    background-color: #35B3A9;
+}

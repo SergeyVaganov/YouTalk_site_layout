@@ -1,0 +1,459 @@
+.main {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 62px;
+}
+
+.general__end {
+    display: none;
+}
+
+@media screen and (width >=1440px) {
+    .main {
+        column-gap: 200px;
+        background: url("/images/gallery/back1_2.png") bottom no-repeat,
+            url("/images/gallery/back2.svg") right top 50% no-repeat,
+            url("/images/gallery/back3.svg") right bottom 198px no-repeat;
+        padding-bottom: 107px;
+    }
+
+    .general__end {
+        display: block;
+    }
+}
+
+.general {
+    box-sizing: border-box;
+    flex: 10 1 600px;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    flex: 10 1 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    align-items: stretch;
+}
+
+.end {
+    min-width: 80%;
+    flex: 1 1 100%;
+}
+
+.sidebar__card {
+    color: #333;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    max-width: 356px;
+    min-width: 100px;
+    max-height: 495px;
+    min-height: 300px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 20.5px;
+}
+
+.sidebar__button {
+    margin-top: 24px;
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: #35B3A9;
+    color: #FFF;
+}
+
+.sidebar__list,
+.general__list {
+    list-style-type: none
+}
+
+.sidebar__list li::before,
+.general__list>li::before {
+    content: " ";
+    background-image: url('../images/gallery/marker.svg');
+    background-size: cover;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 16px;
+    height: 16px;
+}
+
+.card1 {
+    background-color: #E6F0FD;
+}
+
+.card1 div:nth-of-type(1) {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 18px;
+}
+
+.card1 div:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.card2 {
+    border-radius: 16px;
+    border: 1px solid #DEDEDE;
+    position: relative;
+}
+
+.card2 img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.card2 div:nth-of-type(1) {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.card2 div:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.card2 div:nth-of-type(3) {
+    color: #A2A7B1;
+    font-size: 14px;
+
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.card2 div:nth-of-type(4) {
+    margin-top: 16px;
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border-top: 1px solid #DEDEDE;
+}
+
+.card2 li {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.sidebar__widget {
+    background: rgba(243, 244, 248, 0.70);
+    border-radius: 6px;
+    padding: 0px 6px;
+    align-items: center;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    left: 16px;
+}
+
+.sidebar__widget_icon_note {
+    top: 16px;
+}
+
+.sidebar__widget_icon_camera {
+    top: 48px;
+}
+
+.sidebar__widget_icon_note::before {
+    content: " ";
+    background-image: url('../images/gallery/note.svg');
+    background-size: cover;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 16px;
+    height: 16px;
+}
+
+.sidebar__widget_icon_camera::before {
+    content: " ";
+    background-image: url('../images/gallery/camera.svg');
+    background-size: cover;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 16px;
+    height: 16px;
+}
+
+.card3 {
+    padding: 0;
+    background-image: url("../images/aside/aside2_1.png");
+    background-size: cover;
+}
+
+.card3 img {
+    background-color: #E6F0FD;
+    width: 100%;
+
+}
+
+.card4 {
+    background-image: url("../images/aside/aside3.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: start;
+    padding: 32px;
+}
+
+.card4 div:first-child {
+    color: #2963A3;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.card4 button {
+    width: 108px;
+}
+
+.card4 div:nth-child(2) {
+    color: #011632;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card4 div:nth-child(3) {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.general__img img {
+    width: 100%;
+}
+
+.general__author {
+    padding: 16px 0 24px 0;
+}
+
+.general__author span:first-child::before {
+    content: "Автор: ";
+}
+
+.general__author span:first-child::after {
+    content: " \2022 ";
+}
+
+.general__content h6 {
+    margin: 24px 0 16px 0;
+}
+
+.general__list li {
+    list-style-position: inside;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: underline;
+    margin-top: 8px;
+}
+
+.general__list_level_other {
+    padding-left: 1em;
+}
+
+.general__list_level_first {
+    padding-left: 3em;
+}
+
+.general__paragraph {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.general__blockquote {
+
+    border-radius: 16px;
+    background: #F3F7FE;
+    padding: 24px;
+}
+
+.general__paragraph_list {
+    list-style-image: url('../images/gallery/marker.svg');
+    padding-left: 1.5em;
+}
+
+.general__paragraph_list li {
+
+    margin-top: 1.5em;
+}
+
+.general__imgdescription {
+    color: #868686;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+}
+
+.general__special1 {
+    padding: 24px 102px 48px 102px;
+    background-image: url("/images/gallery/specialVector.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (width < 768px) {
+    .general__special1 {
+        padding: 24px 20px 48px 20px;
+    }
+}
+
+.general__imgblock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+
+.general__imgblock div:first-child {
+    flex: 0 1 282px;
+    max-width: 282px;
+    min-width: 250px;
+}
+
+.general__imgblock div:last-child {
+    flex: 0 1 382px;
+    max-width: 382px;
+}
+
+.general__imgblock div img {
+    width: 100%;
+}
+
+.general__task {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.general__task_color_col1 {
+    background-color: #FEFAEC;
+}
+
+.general__task_color_col2 {
+    background-color: #FFF3EB;
+}
+
+.general__task_color_col3 {
+    background-color: rgba(3, 178, 165, 0.10);
+}
+
+.general__imgblock2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+.general__imgblock2 div img {
+    width: 100%;
+}
+
+.general__imgblock2 div {
+    flex: 1 1 45%;
+    min-width: 250px;
+}
+
+.general__zvezda {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+
+}
+
+.general__zvezda div {
+    width: 20%;
+    border-top: 3px solid #0063A8;
+
+}
+
+.general__zvezda img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-top: -20px;
+}
+
+.general__menu li {
+    font-size: 14px;
+    line-height: 20px;
+    display: inline;
+}
+
+.general__menu li button {
+    color: #2963A3;
+}
+
+.general__menu li:not(:last-child)::after {
+    content: " \2022 ";
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 24px;
+    padding-top: 34px;
+}
+
+.end div:first-child {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 24px;
+    width: 35%;
+    padding-top: 38px;
+}
+
+.end__button {
+    width: 238px;
+}
+
+.end__img {
+    background: url("/images/gallery/back4.png") no-repeat 80% 80%;
+}
